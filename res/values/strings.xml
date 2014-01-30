@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">PuzzleCreator</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_puzzle">Puzzle Mat</string>
+    <string name="make_new_puzzle">Make Puzzle</string>
+    <string name="load_image">New Image</string>
+    <string name="load_puzzle">Load Puzzle</string>
+    <string name="exit">Exit</string>
+    <string name="by">x</string>
+    <string name="pieceSize">Pieces</string>
+    <string name="filename">Name</string>
+    <string name="imagePreview">Puzzle Image Preview</string>
+    
+</resources>

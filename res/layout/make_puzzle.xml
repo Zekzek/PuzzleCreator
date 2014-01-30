@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/imagePreview"
+        android:scaleType="fitStart"
+        android:src="@drawable/tree_stream" />
+
+    <EditText
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/moretranswhite"
+        android:clickable="false"
+        android:ems="3"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="none"
+        android:text="@string/filename" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameLabel"
+        android:layout_alignBottom="@+id/nameLabel"
+        android:layout_toRightOf="@+id/nameLabel"
+        android:background="@color/lesstranswhite"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/makePuzzleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/make_new_puzzle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/loadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/load_image"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/pieceSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameLabel"
+        android:layout_below="@+id/nameLabel"
+        android:layout_marginLeft="20dp"
+        android:background="@color/moretranswhite"
+        android:clickable="false"
+        android:ems="3"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="none"
+        android:text="@string/pieceSize" />
+
+    <EditText
+        android:id="@+id/pieceWidthField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pieceSizeLabel"
+        android:layout_alignBottom="@+id/pieceSizeLabel"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/pieceSizeLabel"
+        android:background="@color/lesstranswhite"
+        android:ems="3"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/byLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pieceWidthField"
+        android:layout_alignBottom="@+id/pieceWidthField"
+        android:layout_toRightOf="@+id/pieceWidthField"
+        android:background="@color/moretranswhite"
+        android:clickable="false"
+        android:ems="1"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:inputType="none"
+        android:text="@string/by" />
+
+    <EditText
+        android:id="@+id/pieceHeightField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameField"
+        android:layout_toRightOf="@+id/byLabel"
+        android:background="@color/lesstranswhite"
+        android:ems="3"
+        android:inputType="number" />
+
+</RelativeLayout>
