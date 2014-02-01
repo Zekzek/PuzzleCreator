@@ -45,12 +45,11 @@ public class PuzzleMat implements OnScaleGestureListener, OnTouchListener, Seria
 	
 	public PuzzleMat() 
 	{
-		//this(activeContext, activeAttrs, myView);
+		this(activeContext, activeAttrs, myView);
 	}
 	
  	public PuzzleMat(Context context, AttributeSet attrs, View view) 
 	{
-		/*
 		if (activeContext == null)
 			activeContext = context;
 		if (activeAttrs == null)
@@ -59,7 +58,6 @@ public class PuzzleMat implements OnScaleGestureListener, OnTouchListener, Seria
 		
 		activeMat = this;
 		new ScaleGestureDetector(context, this);
-		*/
 	}
  	
  	public static void newMatFromImage(int xPieces, int yPieces, String imageFilename, String saveFilename)
