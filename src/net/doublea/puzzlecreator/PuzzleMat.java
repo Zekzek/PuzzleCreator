@@ -11,6 +11,8 @@ import java.io.Serializable;
 import java.io.StreamCorruptedException;
 import java.util.Random;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
