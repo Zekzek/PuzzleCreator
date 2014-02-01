@@ -57,7 +57,12 @@ public class PuzzleMat implements OnScaleGestureListener, OnTouchListener, Seria
 		myView = view;
 		
 		activeMat = this;
-		new ScaleGestureDetector(context, this);
+		new AlertDialog.Builder(this)
+			.setTitle("Debug entry")
+			.setMessage("Context is " + context)
+			.setIcon(R.drawable.ic_dialog_alert)
+			.show();
+		//new ScaleGestureDetector(context, this);
 	}
  	
  	public static void newMatFromImage(int xPieces, int yPieces, String imageFilename, String saveFilename)
