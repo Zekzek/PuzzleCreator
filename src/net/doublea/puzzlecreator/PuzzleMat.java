@@ -11,8 +11,6 @@ import java.io.Serializable;
 import java.io.StreamCorruptedException;
 import java.util.Random;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -59,11 +57,6 @@ public class PuzzleMat implements OnScaleGestureListener, OnTouchListener, Seria
 		myView = view;
 		
 		activeMat = this;
-		new AlertDialog.Builder(this)
-			.setTitle("Debug entry")
-			.setMessage("Context is " + context)
-			.setIcon(R.drawable.ic_dialog_alert)
-			.show();
 		//new ScaleGestureDetector(context, this);
 	}
  	
