@@ -73,7 +73,7 @@ public class PuzzleMat implements OnScaleGestureListener, OnTouchListener, Seria
  			activeMat.name = puzzleName;
  			activeMat.filename = puzzleName + ".PZL";
 	 		activeMat.numPieces = new FloatPoint(xPieces, yPieces);
-	 		activeMat.pieces = new PuzzlePiece[xPieces * yPieces];
+	 		//activeMat.pieces = new PuzzlePiece[xPieces * yPieces];
 	 		
 			/*activeMat.makePuzzle(image, (int)activeMat.numPieces.getX(), 
 	 				(int)activeMat.numPieces.getY());
