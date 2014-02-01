@@ -44,7 +44,7 @@ public class Puzzle extends Activity
     		//for (int i = allFileList.length - 1; i >= 0; i--)
     		//	deleteFile(allFileList[i]);
     		
-    		//PuzzleMat.newMatFromImage(2, 2, "", "Test");
+    		PuzzleMat.newMatFromImage(2, 2, "", "Test");
     		return true;
     	}
     	else if(item.getItemId() == R.id.load_puzzle)

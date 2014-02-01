@@ -45,11 +45,12 @@ public class PuzzleMat implements OnScaleGestureListener, OnTouchListener, Seria
 	
 	public PuzzleMat() 
 	{
-		this(activeContext, activeAttrs, myView);
+		//this(activeContext, activeAttrs, myView);
 	}
 	
  	public PuzzleMat(Context context, AttributeSet attrs, View view) 
 	{
+		/*
 		if (activeContext == null)
 			activeContext = context;
 		if (activeAttrs == null)
@@ -57,13 +58,14 @@ public class PuzzleMat implements OnScaleGestureListener, OnTouchListener, Seria
 		myView = view;
 		
 		activeMat = this;
-		//new ScaleGestureDetector(context, this);
+		new ScaleGestureDetector(context, this);
+		*/
 	}
  	
  	public static void newMatFromImage(int xPieces, int yPieces, String imageFilename, String saveFilename)
  	{
- 		newMatFromImage(xPieces, yPieces, BitmapFactory.decodeResource(myView.getResources(),
- 				R.drawable.tree_stream), saveFilename);
+ 		//newMatFromImage(xPieces, yPieces, BitmapFactory.decodeResource(myView.getResources(),
+ 		//		R.drawable.tree_stream), saveFilename);
  	}
  	
  	public static void newMatFromImage(int xPieces, int yPieces, Bitmap image, String puzzleName)
@@ -74,7 +76,7 @@ public class PuzzleMat implements OnScaleGestureListener, OnTouchListener, Seria
  			activeMat.filename = puzzleName + ".PZL";
 	 		activeMat.numPieces = new FloatPoint(xPieces, yPieces);
 	 		activeMat.pieces = new PuzzlePiece[xPieces * yPieces];
-	 		/*
+	 		
 			activeMat.makePuzzle(image, (int)activeMat.numPieces.getX(), 
 	 				(int)activeMat.numPieces.getY());
 	 		activeMat.imageWidth = image.getWidth();
@@ -88,7 +90,7 @@ public class PuzzleMat implements OnScaleGestureListener, OnTouchListener, Seria
 	 		for (int i = 0; i < activeMat.pieces.length; i++)
 	 			activeMat.pieces[i].saveImage();
 			saveMatToFile(activeContext, puzzleName + ".PZL", activeMat);
-			*/
+			
 			myView.invalidate();
  		}
  	}
